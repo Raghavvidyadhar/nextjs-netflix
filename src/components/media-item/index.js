@@ -5,7 +5,7 @@ import { getAllFavorites } from "@/utils"
 import { CheckIcon, ChevronDownIcon, PlusIcon } from "@heroicons/react/24/outline"
 import { motion } from "framer-motion"
 import { useSession } from "next-auth/react"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { usePathname, useRouter } from "next/navigation"
 
 import { useContext } from "react"

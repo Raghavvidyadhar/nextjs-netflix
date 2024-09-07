@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useRouter } from "next/navigation";
 import { AiFillPlayCircle } from "react-icons/ai";
 import {  IoMdInformationCircleOutline } from "react-icons/io";
