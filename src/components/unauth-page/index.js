@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 const questions = [
   {
@@ -45,7 +46,7 @@ function UnauthBanner({ router }) {
     "
       >
         <div className="flex items-center justify-between">
-          <img
+          <Image
             src="https://rb.gy/ulxxee"
             alt="netflix"
             width={120}
@@ -102,7 +103,7 @@ export default function UnauthPage() {
                 Frequently asked questions
               </h1>
               {questions.map((item, index) => (
-                <div className="flex flex-col gap-3">
+                <div  key={index + "unpauth"} className="flex flex-col gap-3">
                   <div
                     onClick={() => setShowCurrentAns(showCurrentAns === index ? null : index)}
                     className="flex justify-between p-3 lg:p-5 mt-2 bg-[#303030] cursor-pointer"

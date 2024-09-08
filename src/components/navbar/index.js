@@ -9,6 +9,7 @@ import { GlobalContext } from "@/context";
 import AccountPopup from "./account-popup";
 import CircleLoader from "../circle-loader";
 import DetailsPopup from "../details-popup"
+import Image from "next/image";
 
 export default function Navbar() {
   const { data: session } = useSession();
@@ -98,7 +99,7 @@ export default function Navbar() {
         className={`header ${isScrolled && "bg-[#141414]"} hover:bg-[#141414]`}
       >
         <div className="flex items-center space-x-2 md:space-x-10">
-          <img
+          <Image
             src="https://rb.gy/ulxxee"
             width={120}
             height={120}
@@ -143,7 +144,7 @@ export default function Navbar() {
             onClick={() => setShowAccountPopup(!showAccountPopup)}
             className="flex gap-2 items-center cursor-pointer"
           >
-            <img
+            <Image
               src="https://occ-0-2611-3663.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfNXUMVXGhnCZwPI1SghnGpmUgqS_J-owMff-jig42xPF7vozQS1ge5xTgPTzH7ttfNYQXnsYs4vrMBaadh4E6RTJMVepojWqOXx.png?r=1d4"
               alt="Current Profile"
               className="max-w-[30px] rounded min-w-[20px] max-h-[30px] min-h-[20px] object-cover w-[30px] h-[30px]"

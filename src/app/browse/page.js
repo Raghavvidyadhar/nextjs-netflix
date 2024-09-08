@@ -53,8 +53,9 @@ export default function Browse() {
             title: "Top rated TV Shows",
             medias: topratedTvShows,
           },
-        ].map((item) => ({
+        ].map((item,index) => ({
           ...item,
+          key : index + "tv",
           medias: item.medias.map((mediaItem) => ({
             ...mediaItem,
             type: "tv",
