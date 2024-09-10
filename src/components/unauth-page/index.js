@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import Image from "next/image";
+
 
 const questions = [
   {
@@ -46,7 +46,7 @@ function UnauthBanner({ router }) {
     "
       >
         <div className="flex items-center justify-between">
-          <Image
+          <img
             src="https://rb.gy/ulxxee"
             alt="netflix"
             width={120}

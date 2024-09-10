@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 
 export default function AccountPopup({
     accounts,
@@ -24,7 +24,7 @@ export default function AccountPopup({
                                 className="cursor-pointer flex gap-5"
                                 key={account._id}
                             >
-                                <Image
+                                <img
                                     src="https://occ-0-2611-3663.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfNXUMVXGhnCZwPI1SghnGpmUgqS_J-owMff-jig42xPF7vozQS1ge5xTgPTzH7ttfNYQXnsYs4vrMBaadh4E6RTJMVepojWqOXx.png?r=1d4"
                                     alt="Current Profile"
                                     className="max-w-[30px] rounded min-w-[20px] max-h-[30px] min-h-[20px] object-cover w-[30px] h-[30px]"
