@@ -9,7 +9,7 @@ import { TrashIcon } from "@heroicons/react/24/outline"
 import PinContainer from "./pin-container"
 import { usePathname } from "next/navigation"
 import { useRouter } from "next/navigation"
-import Image from "next/image"
+
 
 
 const initialFormdata = {
@@ -159,10 +159,11 @@ export default function ManageAccounts() {
                                 }
                             >
                                 <div className="relative">
-                                    <Image
+                                    <img
                                         src="https://occ-0-2611-3663.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABfNXUMVXGhnCZwPI1SghnGpmUgqS_J-owMff-jig42xPF7vozQS1ge5xTgPTzH7ttfNYQXnsYs4vrMBaadh4E6RTJMVepojWqOXx.png?r=1d4"
                                         alt="Account"
                                         className="max-w-[200px] rounded min-w-[84px] max-h-[200px] min-h-[84px] object-cover w-[155px] h-[155px]"
+                                        
                                     />
                                     {showDeleteIcon ? (
                                         <div
